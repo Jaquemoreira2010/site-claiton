@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Painéis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Cadastro de Painéis</h1>
+        <form id="formCadastro">
+            <label for="cliente">Nome do Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label for="quantidade">Quantidade de Painéis:</label>
+            <input type="number" id="quantidade" name="quantidade" required><br>
+
+            <label for="responsaveis">Responsáveis:</label>
+            <select id="responsaveis" name="responsaveis" multiple>
+                <option value="Claiton">Claiton</option>
+                <option value="Milton">Milton</option>
+                <option value="André">André</option>
+                <option value="Pablo">Pablo</option>
+            </select><br>
+
+            <label for="tempo">Tempo de Finalização (em horas):</label>
+            <input type="time" id="tempo" name="tempo" required><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p><a href="dados.html">Ver dados cadastrados</a></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
